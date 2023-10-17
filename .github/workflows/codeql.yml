@@ -1,12 +1,21 @@
-name: workflow for Maven using Snyk security scan
-on: push
+name: Snyk Vulnerability Scan
+on:
+  push:
+    branches:
+      - codeql
+
 jobs:
-  security:
+  snyk-scan:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@master
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/maven@master
-        continue-on-error: false
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
+      - name: Snyk Vulnerability Scan
+        run: snyk test --all-projects
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

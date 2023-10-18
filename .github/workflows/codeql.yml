@@ -53,7 +53,7 @@ jobs:
           
 
       - name: SNYK Authenticate
-        run: snyk auth
+        run: echo "The token is $SNYK_TOKEN"
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN}}
           

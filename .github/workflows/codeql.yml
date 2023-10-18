@@ -53,6 +53,8 @@ jobs:
 
       - name: build
         run: npm install
+        env:
+          SNYK_TOKEN: ${{secrets.SNYK_TOKEN}}
 
           
 

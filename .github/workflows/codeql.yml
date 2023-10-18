@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Snyk CLI
-        run: echo "This is Install Snyk CLI job"
+        run: npm install -g snyk
 
       - name: Snyk Vulnerability Scan
-        run: echo "This is Snyk Vulnerability Scan job"
+        run: snyk test
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

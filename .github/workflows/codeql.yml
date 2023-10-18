@@ -18,7 +18,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Install Snyk CLI
-        run: "This is install snyk cli step"
+        run: echo "This is install snyk cli step"
 
       - name: Snyk Vulnerability Scan
         run: echo "This is Snyk Vulnerability Scan step"

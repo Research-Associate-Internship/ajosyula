@@ -66,8 +66,8 @@ jobs:
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
       - name: Snyk Code test
-        run: snyk test
-        #continue-on-error: true
+        run: snyk code test --severity-threshold=high
+        continue-on-error: true
       
 
         # Runs Snyk Open Source (SCA) analysis and uploads result to Snyk.

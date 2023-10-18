@@ -14,6 +14,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Install Snyk CLI
         run: npm install -g snyk

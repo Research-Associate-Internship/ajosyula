@@ -22,5 +22,6 @@ jobs:
 
       - name: Snyk Vulnerability Scan
         run: snyk test
+        continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

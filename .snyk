@@ -1,8 +1,131 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:http-signature:20150122':
     - tap > codecov.io > request > http-signature:
         patched: '2020-02-07T14:30:00.093Z'
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:hawk:20160119'
+        path: tap > codecov.io > request > hawk
+  SNYK-JS-LODASH-567746:
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > @snyk/dep-graph > lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser >
+          @snyk/dep-graph > lodash
+    - snyk > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > lodash
+    - snyk > inquirer > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > inquirer > lodash
+    - snyk > snyk-config > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-config > lodash
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-mvn-plugin > lodash
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-nodejs-lockfile-parser > lodash
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-nuget-plugin > lodash
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > @snyk/dep-graph > graphlib > lodash
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-go-plugin > graphlib > lodash
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-nodejs-lockfile-parser > graphlib > lodash
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib >
+          lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/ruby-semver > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser >
+          @snyk/ruby-semver > lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser >
+          @snyk/dep-graph > graphlib > lodash
+  'npm:mime:20170907':
+    - tap > codecov.io > request > form-data > mime:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:mime:20170907'
+        path: tap > codecov.io > request > form-data > mime
+  'npm:minimatch:20160620':
+    - tap > nyc > glob > minimatch:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:minimatch:20160620'
+        path: tap > nyc > glob > minimatch
+    - tap > nyc > rimraf > glob > minimatch:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:minimatch:20160620'
+        path: tap > nyc > rimraf > glob > minimatch
+    - tap > nyc > spawn-wrap > rimraf > glob > minimatch:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:minimatch:20160620'
+        path: tap > nyc > spawn-wrap > rimraf > glob > minimatch
+    - tap > nyc > istanbul > fileset > minimatch:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:minimatch:20160620'
+        path: tap > nyc > istanbul > fileset > minimatch
+    - tap > nyc > istanbul > fileset > glob > minimatch:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:minimatch:20160620'
+        path: tap > nyc > istanbul > fileset > glob > minimatch
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:ms:20151024'
+        path: humanize-ms > ms
+  'npm:request:20160119':
+    - tap > codecov.io > request:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:request:20160119'
+        path: tap > codecov.io > request
+  'npm:tunnel-agent:20170305':
+    - tap > codecov.io > request > tunnel-agent:
+        patched: '2023-11-21T15:45:24.012Z'
+        id: 'npm:tunnel-agent:20170305'
+        path: tap > codecov.io > request > tunnel-agent
